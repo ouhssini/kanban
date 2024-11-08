@@ -17,7 +17,7 @@ This project is a Kanban Dashboard that helps you manage tasks efficiently. It i
 
 ## Features
 
-- Add, edit, and delete tasks
+- Add and delete tasks
 - Drag and drop tasks between columns
 - Persistent storage using localStorage
 - Responsive design using Tailwind CSS
