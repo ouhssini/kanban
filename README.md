@@ -44,6 +44,8 @@ To run the project locally, use the following command:
    npm run dev
 ```
 ## Project Structure
+
+```
 kanban/
 ├── .gitignore
 ├── eslint.config.js
@@ -66,6 +68,7 @@ kanban/
 │       └── New.jsx
 ├── tailwind.config.js
 └── vite.config.js
+```
 
 ## Contributing
 
