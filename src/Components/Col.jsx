@@ -29,7 +29,7 @@ const Col = ({ data, type, bg, title, description }) => {
       onDragOver={handleDragOver}
       onDrop={handleDrop}
     >
-      <h2 className="text-2xl font-black text-blue-900 uppercase text-center">
+      <h2 className="text-2xl font-black text-blue-900 uppercase text-center border-b-4 border-blue-900 px-2 w-fit mx-auto pb-3">
         {title}
       </h2>
       <p className="text-lg font-medium py-3 text-gray-700 text-center">

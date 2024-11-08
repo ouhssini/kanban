@@ -18,10 +18,13 @@ const TodoItem = ({ todo, onDragStart, className }) => {
       draggable
       onDragStart={onDragStart}
     >
-      <h3 className="text-base">{todo.title}</h3>
+     <div className="">
+     <h3 className="text-lg font-semibold  text-blue-700 mb-2">{todo.title}</h3>
+     <p className="text-sm text-gray-700">{todo.description}</p>
+     </div>
       {(todo.status === "done" || todo.status === "todo") && (
         <Trash
-          className="ml-auto cursor-pointer text-red-400"
+          className="ml-auto size-6 shadow-md cursor-pointer bg-gray-400 rounded-full p-1 text-red-400"
           onClick={handleDelete}
         />
       )}

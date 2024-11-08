@@ -13,6 +13,7 @@ const New = () => {
   const [formData, setFormData] = useState({
     id: lastId + 1,
     title: "",
+    description: "",
     status: "todo",
   });
 
@@ -41,6 +42,7 @@ const New = () => {
       setFormData({
         id: lastId + 2, // increment id for next task
         title: "",
+        description: "",
         status: "todo",
       });
       toast.success("Task added successfully");
@@ -62,6 +64,15 @@ const New = () => {
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
             />
           </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Description</label>
+            <textarea
+              value={formData.description}
+              name="description"
+              onChange={handleChange}
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" rows="3"
+              />
+              </div>
           <div>
             <label className="block text-sm font-medium text-gray-700">Status</label>
             <select
